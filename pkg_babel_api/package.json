@@ -1,0 +1,27 @@
+{
+  "name": "pkg_babel_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pkg": "pkg package.json -t linux"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "bin": "src/index.js",
+  "pkg": {
+    "scripts": [
+      "src/*.js"
+    ],
+    "assets": [
+      "dist/**/*"
+    ]
+  },
+  "devDependencies": {
+    "pkg": "^4.4.4"
+  }
+}
